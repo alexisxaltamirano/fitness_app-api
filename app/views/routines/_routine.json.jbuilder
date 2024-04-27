@@ -1,6 +1,8 @@
 json.id routine.id
 json.name routine.name
 json.user_id routine.user_id
-json.exercise_id routine.exercise_id
-json.exercise routine.exercise
+json.exercises routine.exercises do |exercise|
+  json.id exercise.id
+  json.name exercise.name
+end
 json.reps routine.reps

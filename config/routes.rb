@@ -16,6 +16,10 @@ Rails.application.routes.draw do
   post "/routines" => "routines#create"
   get "/routines" => "routines#index"
 
+  get "routineexercises" => "routineexercises#index"
+
+  post "/routineexercises" => "routineexercises#create"
+
   # Defines the root path route ("/")
   # root "posts#index"
 end

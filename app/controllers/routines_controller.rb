@@ -1,6 +1,8 @@
 class RoutinesController < ApplicationController
   def index
-    @routines = Routine.where(user_id: current_user.id)
+    # @routines = Routine.includes(:exercises).all
+    # render json: @routines.as_json(include: { exercises: { only: [:name] } })
+    @routines = current_user.routines.includes(:exercises)
     render :index
   end
 

@@ -1,0 +1,4 @@
+json.id routineexercise.id
+json.user_id routineexercise.user_id
+json.routine_id routineexercise.routine_id
+json.exercise_id routineexercise.exercise_id
